@@ -1,2 +1,53 @@
-# game-theory-playground
-Interactive simulations for learning Game Theory
+# Game Theory Playground
+
+進化ゲーム理論における協調ゲーム（Windows vs Mac）のダイナミクスを可視化するWebアプリケーションです。
+
+## 概要
+
+学生がWindowsまたはMacを利用する状況を想定し、周囲の選択に応じて利用OSが変化する過程をシミュレーションします。
+
+ユーザーは以下の2つを変更できます。
+
+- 学生数
+- 初期Windows比率
+
+シミュレーション結果は500年間のWindows比率の推移としてグラフで表示されます。
+
+## 使用技術
+
+- HTML
+- CSS
+- JavaScript
+- Chart.js
+
+## インストール
+
+リポジトリをクローンします。
+
+```bash
+git clone https://github.com/ユーザー名/game-theory-playground.git
+```
+
+## 実行方法
+
+1. VS Codeでフォルダを開く
+2. Live Serverで `index.html` を開く
+3. 学生数と初期Windows比率を入力する
+4. 「シミュレーション開始」を押す
+
+## 実行例
+
+
+## 開発環境
+
+- Visual Studio Code
+- Live Server
+- Git
+
+## テスト
+
+現在は自動テスト未実装です。
+
+## ライセンス
+
+MIT License
