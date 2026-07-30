@@ -1,0 +1,24 @@
+{
+  "name": "game-theory-playground",
+  "version": "1.0.0",
+  "description": "進化ゲーム理論における協調ゲーム（Windows vs Mac）のダイナミクスを可視化するWebアプリケーションです。",
+  "main": "script.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taku0172/game-theory-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Taku0172/game-theory-playground/issues"
+  },
+  "homepage": "https://github.com/Taku0172/game-theory-playground#readme",
+  "devDependencies": {
+    "vitest": "^4.1.10"
+  }
+}
