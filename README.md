@@ -56,12 +56,13 @@ npm install
 
 Vitestを使用して、ゲームロジックの単体テストを実装しています。
 
-依存関係をインストールします。
 
 ```bash
 npm test
 ```
 
-## テスト
+GitHub Actionsにより、mainブランチへのpushおよびpull request時にも自動でテストが実行されます。
+
+## ライセンス
 
 MIT License
