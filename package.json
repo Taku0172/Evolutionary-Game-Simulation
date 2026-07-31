@@ -1,5 +1,5 @@
 {
-  "name": "game-theory-playground",
+  "name": "evolutionary-game-simulation",
   "version": "1.0.0",
   "description": "進化ゲーム理論における協調ゲーム（Windows vs Mac）のダイナミクスを可視化するWebアプリケーションです。",
   "main": "script.js",
@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Taku0172/game-theory-playground.git"
+    "url": "git+https://github.com/Taku0172/Evolutionary-Game-Simulation.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/Taku0172/game-theory-playground/issues"
+    "url": "https://github.com/Taku0172/Evolutionary-Game-Simulation/issues"
   },
-  "homepage": "https://github.com/Taku0172/game-theory-playground#readme",
+  "homepage": "https://github.com/Taku0172/Evolutionary-Game-Simulation#readme",
   "devDependencies": {
     "vitest": "^4.1.10"
   }
