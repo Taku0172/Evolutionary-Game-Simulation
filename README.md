@@ -1,5 +1,7 @@
 # Game Theory Playground
 
+[![Test](https://github.com/Taku0172/game-theory-playground/actions/workflows/test.yml/badge.svg)](https://github.com/Taku0172/game-theory-playground/actions/workflows/test.yml)
+
 進化ゲーム理論における協調ゲーム（Windows vs Mac）のダイナミクスを可視化するWebアプリケーションです。
 
 ## 概要
