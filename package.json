@@ -4,7 +4,7 @@
   "description": "進化ゲーム理論における協調ゲーム（Windows vs Mac）のダイナミクスを可視化するWebアプリケーションです。",
   "main": "script.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
