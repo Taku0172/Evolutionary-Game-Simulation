@@ -27,7 +27,7 @@
 リポジトリをクローンします。
 
 ```bash
-git clone https://github.com/Taku0172/game-theory-playground.git
+git clone https://github.com/Taku0172/Evolutionary-Game-Simulation.git
 ```
 
 ## 実行方法
