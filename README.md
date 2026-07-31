@@ -46,6 +46,12 @@ git clone https://github.com/Taku0172/game-theory-playground.git
 - Live Server
 - Git
 
+## インストール
+
+```bash
+npm install
+```
+
 ## テスト
 
 Vitestを使用して、ゲームロジックの単体テストを実装しています。
@@ -53,8 +59,9 @@ Vitestを使用して、ゲームロジックの単体テストを実装して�
 依存関係をインストールします。
 
 ```bash
-npm install
+npm test
+```
 
-## ライセンス
+## テスト
 
 MIT License
