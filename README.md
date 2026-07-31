@@ -27,7 +27,7 @@
 リポジトリをクローンします。
 
 ```bash
-git clone https://github.com/ユーザー名/game-theory-playground.git
+git clone https://github.com/Taku0172/game-theory-playground.git
 ```
 
 ## 実行方法
@@ -48,7 +48,12 @@ git clone https://github.com/ユーザー名/game-theory-playground.git
 
 ## テスト
 
-現在は自動テスト未実装です。
+Vitestを使用して、ゲームロジックの単体テストを実装しています。
+
+依存関係をインストールします。
+
+```bash
+npm install
 
 ## ライセンス
 
