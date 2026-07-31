@@ -1,3 +1,5 @@
+import { calculatePayoffs } from "./gameLogic.js";
+
 let resultChart = null;
 
 const runButton = document.getElementById("runButton");
@@ -48,15 +50,8 @@ runButton.addEventListener("click", () => {
             }
         }
 
-        const windowsRate = windowsUsers / studentCount;
-        const macRate = macUsers / studentCount;
-
-        // 利得表
-        // Windows同士：2
-        // Mac同士：1
-        // 異なる機種同士：0
-        const windowsPayoff = 2 * windowsRate;
-        const macPayoff = macRate;
+        const { windowsPayoff, macPayoff } =
+            calculatePayoffs(windowsUsers, studentCount);
 
         if (windowsPayoff > macPayoff) {
             const switchers = Math.round(
