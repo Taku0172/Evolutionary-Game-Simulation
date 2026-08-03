@@ -87,8 +87,6 @@ for (let year = 0; year <= years; year++) {
 
 const chartData = history.map(rate => rate * 100);
 
-console.log(chartData); #時系列データを保存するために一時的に挿入
-
 const chartCanvas = document.getElementById("resultChart");
 
 if (resultChart !== null) {

@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Evolutionary Game Simulation</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <main class="container">
-        <h1>Windows vs Mac シミュレーション</h1>
+
+        <h1>Evolutionary Game Simulation</h1>
 
         <p class="description">
-            学生がWindowsまたはMacを選び、周囲の状況から学習して選択を変えていく過程を観察します。
+            WindowsとMacの利用比率が、時間とともにどのように変化するかを
+            シミュレーションします。
         </p>
 
         <section class="control-panel">
-            <label for="studentCount">学生数</label>
+
+            <h2>シミュレーション設定</h2>
+
+            <label for="studentCount">
+                学生数
+            </label>
+
             <input
                 type="number"
                 id="studentCount"
@@ -25,7 +36,10 @@
                 value="1000"
             >
 
-            <label for="initialWindowsRate">初期Windows比率</label>
+            <label for="initialWindowsRate">
+                初期Windows比率（%）
+            </label>
+
             <input
                 type="number"
                 id="initialWindowsRate"
@@ -34,21 +48,28 @@
                 value="50"
             >
 
-            <button id="runButton">シミュレーション開始</button>
+            <button id="runButton">
+                シミュレーション開始
+            </button>
+
         </section>
 
         <section class="result-panel">
+
             <h2>シミュレーション結果</h2>
+
             <p id="resultMessage">
                 条件を設定して、シミュレーションを開始してください。
             </p>
 
             <canvas id="resultChart"></canvas>
+
         </section>
+
     </main>
 
-    <script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="script.js"></script>
+
 </body>
 </html>
