@@ -20,33 +20,148 @@
             シミュレーションします。
         </p>
 
+        <section class="game-structure">
+
+            <h2>ゲームの構造</h2>
+
+            <div class="structure-grid">
+
+                <div class="structure-card">
+                    <h3>Players</h3>
+                    <p>
+                        大学の寄宿舎にいる学生が
+                        WindowsまたはMacのどちらかを利用します。
+                    </p>
+                </div>
+
+                <div class="structure-card">
+                    <h3>Matching</h3>
+                    <p>
+                        学生は毎期ランダムに相手と組み、
+                        共同で課題に取り組みます。
+                    </p>
+                </div>
+
+                <div class="structure-card">
+                    <h3>Payoff</h3>
+                    <p>
+                        同じ機種同士なら正の利得を得ます。
+                        異なる機種同士では共同作業が難しく、利得は0です。
+                    </p>
+                </div>
+
+                <div class="structure-card">
+                    <h3>Exit & Entry</h3>
+                    <p>
+                        毎期、一部の学生が退居し、
+                        新入生がランダムな機種を持って参加します。
+                    </p>
+                </div>
+
+                <div class="structure-card">
+                    <h3>Learning</h3>
+                    <p>
+                        残った学生の一部は、
+                        前期により高い利得を得た機種へ買い替えます。
+                    </p>
+                </div>
+
+                <div class="structure-card">
+                    <h3>Long-run Dynamics</h3>
+                    <p>
+                        この退出・参入・学習を長期間繰り返し、
+                        WindowsとMacの利用比率の変化を観察します。
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="payoff-section">
+
+            <h2>利得構造</h2>
+
+            <table class="payoff-table">
+
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>相手：Windows</th>
+                        <th>相手：Mac</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>自分：Windows</th>
+                        <td>2, 2</td>
+                        <td>0, 0</td>
+                    </tr>
+
+                    <tr>
+                        <th>自分：Mac</th>
+                        <td>0, 0</td>
+                        <td>1, 1</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <p class="payoff-note">
+                各セルは「自分の利得, 相手の利得」を表します。
+            </p>
+
+        </section>
+
         <section class="control-panel">
 
             <h2>シミュレーション設定</h2>
 
-            <label for="studentCount">
-                学生数
-            </label>
+            <p class="control-description">
+                学生数と初期Windows比率を設定してください。
+                その後、長期間の進化過程をシミュレーションします。
+            </p>
 
-            <input
-                type="number"
-                id="studentCount"
-                min="10"
-                max="10000"
-                value="1000"
-            >
+            <div class="control-grid">
 
-            <label for="initialWindowsRate">
-                初期Windows比率（%）
-            </label>
+                <div class="input-group">
+                    <label for="studentCount">
+                        学生数
+                    </label>
 
-            <input
-                type="number"
-                id="initialWindowsRate"
-                min="0"
-                max="100"
-                value="50"
-            >
+                    <input
+                        type="number"
+                        id="studentCount"
+                        min="10"
+                        max="10000"
+                        value="1000"
+                    >
+
+                    <small>
+                        シミュレーションに参加する学生の総数
+                    </small>
+                </div>
+
+
+                <div class="input-group">
+                    <label for="initialWindowsRate">
+                        初期Windows比率（%）
+                    </label>
+
+                    <input
+                        type="number"
+                        id="initialWindowsRate"
+                        min="0"
+                        max="100"
+                        value="50"
+                    >
+
+                    <small>
+                        初期時点でWindowsを利用している学生の割合
+                    </small>
+                </div>
+
+            </div>
 
             <button id="runButton">
                 シミュレーション開始
@@ -58,11 +173,26 @@
 
             <h2>シミュレーション結果</h2>
 
-            <p id="resultMessage">
-                条件を設定して、シミュレーションを開始してください。
-            </p>
+            <div class="result-summary">
 
-            <canvas id="resultChart"></canvas>
+                <p id="resultMessage">
+                    条件を設定して、シミュレーションを開始してください。
+                </p>
+
+            </div>
+
+            <div class="chart-container">
+
+                <h3>Windows / Mac 比率の推移</h3>
+
+                <p class="chart-description">
+                    各期におけるWindowsとMacの利用比率を表示します。
+                    初期状態から、どちらの均衡へ向かうかを観察できます。
+                </p>
+
+                <canvas id="resultChart"></canvas>
+
+            </div>
 
         </section>
 
